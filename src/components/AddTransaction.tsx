@@ -22,12 +22,14 @@ const AddTransaction = () => {
             Amount <br /> ( negative - expense, positive - income )
           </label>
           <input
-            type="text"
+            type="number"
             id="amount"
             name="amount"
             placeholder="Enter amount..."
+            step="0.01"
           />
         </div>
+        <button className="btn">Add Transaction</button>
       </form>
     </>
   );
