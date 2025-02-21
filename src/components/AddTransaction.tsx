@@ -9,9 +9,10 @@ const AddTransaction = () => {
     if (error) {
       toast.error(error);
     } else {
-      toast.success("Transaction Added");
+      toast.success("Transaction added");
     }
   };
+
   return (
     <>
       <h3>Add Transaction</h3>
