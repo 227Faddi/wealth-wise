@@ -5,7 +5,7 @@ import { toast } from "react-hot-toast";
 
 const AddTransaction = () => {
   const clientAction = async (formData: FormData) => {
-    const { data, error } = await addTransaction(formData);
+    const { error } = await addTransaction(formData);
     if (error) {
       toast.error(error);
     } else {
