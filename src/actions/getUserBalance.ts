@@ -18,10 +18,7 @@ async function getUserBalance(): Promise<{
       where: { userId },
     });
 
-    const balance = transactions.reduce(
-      (acc, transaction) => (acc += transaction.amount),
-      0
-    );
+    const balance = transactions.reduce((acc, item) => (acc += item.amount), 0);
 
     return { balance };
   } catch {
